@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow internal or admin paths (if added later)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Point search engines to your sitemap for better indexing
+Sitemap: https://stealthysec.com/sitemap.xml
+
+# Optional: Short crawl delay to reduce server load (GitHub Pages is static, so it's optional)
+Crawl-delay: 2
