@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StealthySec – Complete IT & Cybersecurity</title>
+  <meta name="description" content="StealthySec offers scalable IT and cybersecurity services for individuals and small businesses. $200/month or $800/year. Protect. Optimize. Stay Ahead." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #101a36;
+      --accent: #2aa7ff;
+      --text: #e6ecff;
+      --muted: #9bb2d1;
+      --ok: #37d67a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background: rgba(15, 25, 50, 0.9);
+      border-bottom: 1px solid #1b2b52;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: .5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #2aa7ff, #0f6bb8);
+      box-shadow: 0 0 10px #2aa7ff99;
+    }
+    nav a {
+      margin-left: 20px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .hero {
+      padding: 80px 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      align-items: center;
+      gap: 40px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      margin: 0 0 10px;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid #1b335a;
+      background: linear-gradient(180deg, #1a3a66, #0f2444);
+      color: #eaf4ff;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: linear-gradient(180deg, #2aa7ff, #0f6bb8);
+      box-shadow: 0 0 10px #2aa7ff77;
+    }
+    section {
+      padding: 60px 5%;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid #1b2b52;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    }
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '✔ ';
+      color: var(--ok);
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .pricebox {
+      background: #0d1530;
+      border: 1px solid #20406e;
+      border-radius: 14px;
+      padding: 20px 25px;
+      flex: 1;
+      min-width: 240px;
+    }
+    .price {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .save {
+      color: var(--ok);
+      font-weight: 600;
+    }
+    form {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #263a66;
+      background: #0a132b;
+      color: var(--text);
+    }
+    button[type=submit] {
+      background: linear-gradient(180deg, #2aa7ff, #0f6bb8);
+      border: none;
+      color: white;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid #1b2b52;
+      background: #0b1020;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">StealthySec</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Complete IT & Cybersecurity — One Monthly Plan</h1>
+      <p>$200/month or $800/year. Protect. Optimize. Stay Ahead. Labor included. (Parts/licenses separate.)</p>
+      <a class="btn" href="#contact">Book Free Consult</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="card">
+      <h2>What’s Included</h2>
+      <ul>
+        <li>Monthly security audit & system health check</li>
+        <li>Device, network, and account hardening</li>
+        <li>Backup and recovery guidance</li>
+        <li>Phishing and password protection support</li>
+        <li>Privacy and compliance best practices (HIPAA, FERPA, etc.)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="card">
+      <h2>Simple Pricing</h2>
+      <div class="pricing">
+        <div class="pricebox">
+          <div class="price">$200</div>
+          <div>/month</div>
+        </div>
+        <div class="pricebox">
+          <div class="price">$800</div>
+          <div>/year <span class="save">Save $400</span></div>
+        </div>
+      </div>
+      <p style="color:var(--muted);margin-top:10px;">Labor & consultation included. Hardware/parts/licenses billed separately.</p>
+      <a class="btn" href="#contact">Start Protection</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Ready to secure your business? Fill out the form below — we’ll reply within one business day.</p>
+      <!-- Replace YOUR_EMAIL with your real email or routed address -->
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <input type="hidden" name="_subject" value="StealthySec Inquiry" />
+        <input type="hidden" name="_template" value="table" />
+        <input name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Tell us about your setup or issues…" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="margin-top:10px;color:var(--muted);">Prefer email? <a href="mailto:contact@stealthysec.com">contact@stealthysec.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 StealthySec LLC — Charleston, SC • <a href="#privacy">Privacy</a> • <a href="#terms">Terms</a>
+  </footer>
+</body>
+</html>
